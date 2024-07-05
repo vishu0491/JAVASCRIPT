@@ -21,3 +21,4 @@ console.log(byClassname)
 //tagname[attribute ="value"]
 let byAtt = document.querySelector('p[name="nm"]')
 console.log(byAtt)
+

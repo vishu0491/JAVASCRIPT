@@ -98,3 +98,18 @@ console.log(q2)
 
 
 
+let number = [6,3,1,4,12,4]
+let newA= number.map(function (el){
+  return el>10
+})
+
+console.log(newA)
+////
+
+
+let markh =[6,3,1,4,12,4]
+let above10 = markh.filter(function(el,index,arr){
+    return el >10
+})
+
+console.log(above10)
