@@ -23,16 +23,29 @@ console.log(bikes)
 
 
 
-// let names = ["amol","vishal","nikhil","priya"]
-// names.unshift("vishal")
-// console.log(names)
-// let q1= names.shift("vishal")
-// console.log(q1)
+let names = ["amol","vishal","nikhil","priya"]
+names.unshift("vishal")
+console.log(names)
+let q1= names.shift("vishal")
+console.log(q1)
 
 
-//  
 
+//
 
+let namesA = ["ninad","amol","ram","ram","ramesh"]
+let q2 =namesA.push("sachin")
+//console.log(q2)
+console.log(namesA)
+
+console.log(q2)
+
+let q3 =namesA.unshift("amit")
+console.log(namesA)
+
+let q4=namesA.shift()
+console.log(q4)
+console.log(namesA)
 
 
 
