@@ -48,5 +48,3 @@ console.log(q4)
 console.log(namesA)
 
 
-
-
