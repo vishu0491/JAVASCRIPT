@@ -1,171 +1,172 @@
-
-function additionA() {
+function additionA(){
     console.log("A")
 }
-function additionB() {
+function additionB(){
     console.log("B")
 }
-// additionA()
-// additionB()
+additionA()
+additionB()
 
-// program 2
+//program 2
 
-// function addtionC(){
-//     setTimeout(() => {
-//         console.log("C")
+// function additionC(){
+//     setTimeout(() =>{
+//         console.log("c")
 //     },3000);
 // }
-// function additionD(){
-//     console.log('D')
+// function additonD(){
+//     console.log("D")
 // }
-// addtionC()
-// additionD()
+// additionC()
+// additonD()
 
-// program 3
+//program 3
 
-function getInfo() {
-    setTimeout(function () {
+function getInfo(){
+    setTimeout(function(){
         console.log("user created")
-    }, 3000)
-    setTimeout(function () {
+    },3000)
+    setTimeout(function (){
         console.log("user id")
-    }, 2000)
-    setTimeout(function () {
+    },2000)
+    setTimeout(function(){
         console.log("user info")
-    }, 1000)
+    },1000)
 }
-//getInfo()
 
-function getInfo() {
-    setTimeout(function () {
+getInfo()
+
+
+function getinfo(){
+    setTimeout(function(){
         console.log("user created")
-        setTimeout(function () {
+        setTimeout(function(){
             console.log("user id")
-            setTimeout(function () {
+            setTimeout(function(){
                 console.log("user info")
-            }, 1000)
-        }, 2000)
-    }, 3000)
+            },1000)
+        },2000)
+    },3000)
 }
+
 getInfo()
 
 // program 4
-// promise --- pending resolve reject
+// promise --- pending resolved reject
 
-// let pro = new Promise(function(resolve,reject){
-//     let a = 20
-//     let b = 20
-//     if(a == b){
-//         resolve('hello')
-//     }
-//     else {
-//        // console.log('reject')
-//         reject("bye")
-//     }
-
-// })
-// // consuming the promise
-// pro
-// .then(function(str){
-//     console.log(str)
-// },function(str){
-//     console.log(str)
-// })
-// program 2
-
-let pro2 = new Promise(function (resolve, reject) {
+let pro = new Promise(function(resolve,reject){
     let a = 20
-    let b = 20
-    if (a == b) {
-        resolve([11, 22, 3])
+    let b = 10
+    if (a == b){
+        resolve('hello')
     }
-    else {
-        reject({ firstName: "chinmay" })
+    else{
+        reject("bye")
     }
-
 })
-// consuming the promise
+
+
+//consuming tyhe promise 
+pro
+.then(function(str){
+    console.log(str)
+},function(str){
+    console.log(str)
+})
+
+
+let pro2 = new Promise(function(resolve,reject){
+    let a = 20
+    let b = 10
+    if (a == b){
+        resolve([11,22,31])
+    }
+    else{
+        reject({fistName : "chinmay"})
+    }
+})
+
+//consuming the promise
+
 pro2
-    .then(function (a) {
-        console.log(a)
-    }, function (b) {
-        console.log(b)
-    })
+.then(function(a){
+    console.log(a)
+},function(b){
+    console.log(b)
+})
 
 // program 3
 
-let pro3 = new Promise(function (resolve, reject) {
+let pro3 = new Promise(function(resolve,reject){
     let a = 20
-    let b = 2
-    if (a == b) {
-        resolve([11, 22, 3])
+    let b = 30
+    if (a == b){
+        resolve([11,22,31])
     }
-    else {
-        reject({ firstName: "chinmay" })
+    else{
+        reject({firstName : "vishal"})
     }
-
 })
-// consuming the promise
+
+// consumig Promise
 pro3
-    .then(function (a) {
-        console.log(a)
-    })
-    .catch(function (b) {
-        console.log(b)
-    })
+.then(function(a){
+    console.log(a)
+})
+.catch(function(b){
+    console.log(b)
+})
+
 
 // program 4
 
-let pro4 = new Promise(function (resolve, reject) {
+let pro4 = new Promise(function(resolve,reject){
     let a = 20
-    let b = 2
-    if (a == b) {
-        resolve([11, 22, 3])
+    let b = 20
+    if (a == b){
+        resolve([11,22,31])
     }
-    else {
-        reject({ firstName: "chinmay" })
+    else{
+        reject({firstName :"Tushar"})
     }
-
 })
-// consuming the promise
+
+//consuming the Promise
+
 pro4
-    .then(function (a) {
-        console.log(a)
-    })
-    .catch(function (b) {
-        console.log(b)
-    })
-    .finally(function () {
-        console.log("i will always execute...")
-    })
+.then(function(a){
+    console.log(a)
+})
+.catch(function(b){
+    console.log(b)
+})
+.finally(function(){
+    console.log("i will always execute....")
+})
 
-/// user create ----- user id ----- user info
 
+// user  create ----- user id ------- user ifo 
 // program 5
 
-
-let pro5 = new Promise(function (resolve, reject) {
-
-    let a = 10
-    let b = 10
-
-    if(a = b){
-        resolve([["NAGPUR","WARDHA"],["PUNE","MUMBAI"],["JAIPUR","UDAIPUR"]])
+let pro5 = new Promise(function(resolve,reject){
+    let a = 20
+    let b = 30
+    if (a == b){
+    resolve([["NAGPUR","WARDHA"],["PUNE","MUMBAI"],["JAIPUR","UDAIPUR"]])
     }
-    else {
+    else{
         reject("bye")
     }
-
 })
 
-pro5.
-then(function(s){
-    console.log(s)
-    return s[0]
-})
+pro5
 .then(function(s){
     console.log(s[0])
-    return s[0]
+    returns[0]
+})
+.then(function(s){
+    console.log(s[10])
+    return[0]
 })
 .then(function(s){
     console.log(s)
@@ -176,3 +177,4 @@ then(function(s){
 .finally(function(){
     console.log("i")
 })
+
