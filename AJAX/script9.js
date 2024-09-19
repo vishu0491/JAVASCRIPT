@@ -7,149 +7,159 @@
 // Promise.any([])
 
 
-
 // let proOne = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         resolve('user created successfully...1')
-//     }, 3000);
+//        resolve('user one ceated successfully....1') 
+//     },2000);
 // })
 
-
-
-// let proTwo = new Promise(function(resolve,reject){
+// let protwo = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         resolve('user created successfully...2')
-//     }, 2000);
+//        resolve('user two ceated successfully....2') 
+//     },2000);
 // })
 
-// let proThree = new Promise(function(resolve,reject){
+// let prothree = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         resolve('user created successfully...3')
-//     }, 2000);
+//        resolve('user three ceated successfully....3') 
+//     },2000);
 // })
 
-// let  = new Promise(function(resolve,reject){
+// let profour = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         reject('user created successfully...4')
-//     }, 1000);
+//        resolve('user four ceated successfully....4') 
+//     },1000);
 // })
 
-// program one ...
-// async function PromiseAll(){
-//     try{
-//         let pro = await Promise.all([proOne,proTwo,proThree,proFour])
-//         console.log(pro)
-//     }
-//     catch{
-//         console.log('error caught')
-//     }
+// // program one ...
+// async function PromiseAll() {
+// try{
+//     let pro =await Promise.all([proOne,protwo,prothree,profour])
+//     console.log(pro)
+    
+// }    
+// catch{
+//     console.log('error caught')
 // }
+// }
+
 // PromiseAll()
 
-// program 2
-
+// // program 2
 
 // proOne = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         resolve('user created successfully...1')
-//     }, 3000);
-// })
-
-// proTwo = new Promise(function(resolve,reject){
-//     setTimeout(() => {
-//         resolve('user created successfully...2')
+//         resolve('user created succesfully ---1')
 //     }, 2000);
 // })
 
-// proThree = new Promise(function(resolve,reject){
+// protwo = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         resolve('user created successfully...3')
-//     }, 2000);
+//         reject('user cretd failed')
+//     }, 200);
 // })
 
-// proFour = new Promise(function(resolve,reject){
+// prothree = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         reject('user created successfully...4')
+//        resolve('user cread succfully 3') 
+//     },100);
+// })
+
+// profour = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         resolve('user created succesfuly 4')
 //     }, 1000);
 // })
 
-// async function PromiseAllSettled(){
-//     let arr = await  Promise.allSettled([proOne,proTwo,proThree,proFour])
+// async function PromiseAllsettled(){
+//     let arr = await Promise.allSettled([proOne,protwo,profour,prothree])
 //     console.log(arr)
 // }
 
-// PromiseAllSettled()
+// PromiseAllsettled()
 
 
-// program 3
 
+// // program 4 
+// // promise.race() - with asnc wait function
 
-proOne = new Promise(function(resolve,reject){
-    setTimeout(() => {
-        resolve('user created successfully...1')
-    }, 3000);
-})
-
-proTwo = new Promise(function(resolve,reject){
-    setTimeout(() => {
-        resolve('user created successfully...2')
-    }, 2000);
-})
-
-proThree = new Promise(function(resolve,reject){
-    setTimeout(() => {
-        resolve('user created successfully...3')
-    }, 2000);
-})
-
-// proFour = new Promise(function(resolve,reject){
+// proOne = new Promise(function(resolve,reject){
 //     setTimeout(() => {
-//         reject('user created successfully...4')
+//         resolve('user one created succesfuly ')
 //     }, 1000);
 // })
 
+// protwo = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         resolve('user two created succesfuly ')
+//     }, 1000);
+// })
+
+// prothree = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         resolve('user three created succesfuly')
+//     }, 1000);
+// })
+
+// profour = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         resolve('user created succesfuly 4')
+//     }, 1000);
+// })
 
 // async function PromiseRace(){
-//     try {
-//         let raceWinner = await Promise.race([proOne,proTwo])
-//         console.log(raceWinner)
-//     }
-//     catch{
-//         console.log("error caught..")
-//     }
+// try{
+//     let racewinner = await Promise.race([proOne,protwo,profour,prothree])
+//     console.log(racewinner)
 // }
+// catch{
+//     console.log("error caught ..")
+// }
+
+// }
+
 // PromiseRace()
 
-
-// program 4
+// program 4 
+// Promise.Any with asnc awiat 
 
 proOne = new Promise(function(resolve,reject){
     setTimeout(() => {
-        resolve('user created successfully...1')
-    }, 2000);
-})
-
-proTwo = new Promise(function(resolve,reject){
-    setTimeout(() => {
-        resolve('user created successfully...2')
+        resolve('user one created succesfuly')
     }, 1000);
 })
 
-proThree = new Promise(function(resolve,reject){
+protwo = new Promise(function(resolve,reject){
     setTimeout(() => {
-        resolve('user created successfully...3')
-    }, 4000);
-})
-
-proFour = new Promise(function(resolve,reject){
-    setTimeout(() => {
-        reject('user created successfully...4')
+        resolve('user two created succesfuly')
     }, 1000);
 })
 
+prothree = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        resolve('user three created succesfuly')
+    }, 1000);
+})
+
+profour = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        reject('user four created succesfuly')
+    }, 1000);
+})
 
 async function PromiseAny(){
-    let val = await Promise.any([proOne,proTwo,proThree,proFour])
+    let val = await Promise.any([proOne,protwo,prothree,profour])
     console.log(val)
 }
+
 PromiseAny()
+
+
+
+
+
+
+
+
+
+
