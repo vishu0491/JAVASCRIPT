@@ -122,4 +122,4 @@ function getUsers(pageNumber){
 
 }
 
-getUsers(2)
+getUsers()

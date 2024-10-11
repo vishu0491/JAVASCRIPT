@@ -58,3 +58,10 @@ function getinfo(){
 }
 
 getinfo()
+
+// program 5 promises
+
+// pending
+// resove
+// reject
+

@@ -8,7 +8,7 @@ buttonT.addEventListener('click',function(){
     newLi.textContent = fruitT
     createButtons(newLi)
     ulList.appendChild(newLi)
-    inpuT.value =""
+    inpuT.value = ""
 })
 
 ulList.addEventListener('click',function(event){

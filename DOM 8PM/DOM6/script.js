@@ -22,3 +22,6 @@ let info = {
 
 info.parent.mother = "Sangita a jadhav"
 info['parent']['mother']= "sangita a jadhav"
+
+
+
